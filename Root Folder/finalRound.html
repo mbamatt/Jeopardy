@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeopardy - Final Round</title>
+    <link real="stylesheet" href="../Styles Folder/style.css">  
+</head>
+<body>
+    <h1>Jeopardy -  Final Round</h1>
+    <h2>Final Category Name</h2>
+
+    <form>
+        <label for="bet - amount">Enter your bet amount:</label>
+        <input type="number" id="bet - amount" name="bet - amount" min="0">
+        <label for="fianl - answer">Enter the final answer:</label>
+        <input type="button" id="final - answer" name="final - answer" disabled>
+        <button type="button" id="submit - final - answer" disabled>Submit Final</button>
+    </form>
+    
+    <div class="scores">
+        <p>Player 1: <span id="player1 - score">0</span></p>
+        <p>Player 2: <span id="player2 - score">0</span></p>
+    </div>
+
+    <button id="prev - round - button" onclick="startSecondRound()">Previous Round</button>
+
+    <script>
+        function startSecondRound() {
+            window.location.href = "second_round.html";
+        }
+    </script>
+</body>
+</html>
